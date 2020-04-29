@@ -1,0 +1,97 @@
+@import "_config.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100hv;
+
+  header {
+    background: linear-gradient(rgba(0, 0, 100, 0.5), rgba(0, 0, 100, 0.5)),
+      url(backdrop.jpg);
+    background-size: cover;
+    background-position: center;
+    color: $white;
+    height: 100vh;
+
+    h1 {
+      font-size: 48px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+      padding-top: 300px;
+    }
+
+    nav {
+      position: fixed;
+      width: 100%;
+      line-height: 20px;
+      transition: background 0.6s;
+
+      .logo {
+        height: 40px;
+        float: left;
+        margin: 7px 48px;
+      }
+
+      ul {
+        float: right;
+        margin: 0;
+        padding-right: 42px;
+
+        li {
+          display: inline-block;
+          padding: 14px 32px;
+
+          a {
+            text-decoration: none;
+            font-size: 16px;
+            line-height: normal;
+            color: $white;
+          }
+          a:hover {
+            text-decoration: none;
+            color: $red;
+          }
+        }
+      }
+    }
+  }
+
+  nav.black {
+    background: #000;
+  }
+
+  footer {
+    width: 100%;
+    background-color: $black;
+    color: white;
+  }
+
+  .experiences-area,
+  .projects-area,
+  .about-area {
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    height: 700px;
+
+    .text-apart {
+      width: 65%;
+      height: 80%;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 28px;
+      color: #333;
+      text-align: justify;
+    }
+  }
+}
