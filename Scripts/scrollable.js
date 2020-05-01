@@ -8,8 +8,8 @@ const flightPath = {
     { x: 750, y: -100 },
     { x: 350, y: -50 },
     { x: 600, y: 100 },
-    { x: 800, y: 0 },
-    { x: window.innerWidth, y: -250 },
+    { x: 800, y: -20 },
+    { x: window.innerWidth, y: -100 },
   ],
 };
 

@@ -19,12 +19,13 @@
     />
   </head>
   <body>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
         <header class="homeMenu">
             
             <nav>
                 <img class="logo" src='./Assets/logo.png' alt='Logo'></img>
-                <ul>
+                <ul class ="nav-links">
                     <li>
                         <a href="#About">About</a>
                     </li>
@@ -45,13 +46,16 @@
                 </div>
             </nav>
             <h1>Test navbar Anni Wang</h1>
+            
         </header>
+
+        <script src="Scripts/reactNav.js"></script>
         
         <section class="animation">
             <img class="paper-plane" src="https://i.postimg.cc/W1w9dT1x/paper.png" alt="Paper Plane">
         </section>
 
-        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
@@ -59,7 +63,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js"></script>
-        <script src="scrollable.js"></script>
+        <script src="Scripts/scrollable.js"></script>
         
         
         <div class="about-area" id="About">
@@ -106,18 +110,7 @@
             hihhihi
         </footer>
        
-        <script type="text/javascript">
-
-            $(window).on("scroll", function() {
-                if($(this).scrollTop() > $("header").height()-300) {
-                    $('nav').addClass('black');
-                }
-                else {
-                    $('nav').removeClass('black');
-                }
-            })
-
-        </script>
+        <script src="Scripts/transNav.js"></script>
         
     </body>
     

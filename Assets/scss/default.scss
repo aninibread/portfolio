@@ -40,7 +40,7 @@ body {
         margin: 7px;
       }
 
-      ul {
+      .nav-links {
         float: right;
         margin: 0;
 
@@ -72,11 +72,42 @@ body {
       height: 2px;
       background-color: rgb(226, 226, 226);
       margin: 5px;
+      transition: all 0.5s ease;
     }
   }
 
   nav.black {
     background: #000;
+  }
+
+  nav.shrink {
+    background-color: $black;
+    .nav-links {
+      position: absolute;
+      right: 0px;
+      background: $black;
+      display: flex;
+      flex-direction: column;
+      height: 95vh;
+      top: 9.5vh;
+      align-items: center;
+      width: 50%;
+      transition: transform 0.5s ease;
+      transform: translate(100%);
+
+      li {
+        opacity: 0;
+        padding: 47px 45px;
+      }
+    }
+    .burger {
+      display: block;
+      cursor: pointer;
+    }
+    .nav-active {
+      transition: transform 0.5s ease-in;
+      transform: translateX(0%);
+    }
   }
 
   footer {
@@ -89,7 +120,6 @@ body {
     height: 100vh;
     background-image: linear-gradient(45deg, #fbc2eb 0%, #a6c1ee 100%);
     position: relative;
-    overflow: hidden;
 
     .paper-plane {
       height: 100px;
@@ -124,10 +154,25 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .logo {
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
   }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 
-  ul {
-  }
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 5px);
+  transition: 0.5s;
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -5px);
+  transition: 0.5s;
 }
