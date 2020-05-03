@@ -92,7 +92,7 @@ body {
       top: 9.5vh;
       align-items: center;
       width: 50%;
-      transition: transform 0.5s ease;
+      transition: ease-out 0.4s;
       transform: translate(100%);
 
       li {
@@ -108,12 +108,18 @@ body {
       transition: transform 0.5s ease-in;
       transform: translateX(0%);
     }
-  }
 
-  footer {
-    width: 100%;
-    background-color: $black;
-    color: white;
+    .toggle .line1 {
+      transform: rotate(-45deg) translate(-5px, 5px);
+      transition: 0.5s;
+    }
+    .toggle .line2 {
+      opacity: 0;
+    }
+    .toggle .line3 {
+      transform: rotate(45deg) translate(-5px, -5px);
+      transition: 0.5s;
+    }
   }
 
   .animation {
@@ -152,6 +158,12 @@ body {
       text-align: justify;
     }
   }
+
+  footer {
+    width: 100%;
+    background-color: $black;
+    color: white;
+  }
 }
 
 @keyframes navLinkFade {
@@ -163,16 +175,4 @@ body {
     opacity: 1;
     transform: translateX(0px);
   }
-}
-
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 5px);
-  transition: 0.5s;
-}
-.toggle .line2 {
-  opacity: 0;
-}
-.toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -5px);
-  transition: 0.5s;
 }
