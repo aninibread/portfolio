@@ -64,6 +64,10 @@ body {
     }
   }
 
+  nav.black {
+    background: #000;
+  }
+
   .burger {
     display: none;
 
@@ -76,10 +80,6 @@ body {
     }
   }
 
-  nav.black {
-    background: #000;
-  }
-
   nav.shrink {
     background-color: $black;
     .nav-links {
@@ -89,11 +89,11 @@ body {
       display: flex;
       flex-direction: column;
       height: 95vh;
-      top: 9.5vh;
+      top: 8vh;
       align-items: center;
-      width: 50%;
-      transition: ease-out 0.4s;
+      width: 65%;
       transform: translate(100%);
+      text-align: center;
 
       li {
         opacity: 0;
@@ -105,8 +105,8 @@ body {
       cursor: pointer;
     }
     .nav-active {
-      transition: transform 0.5s ease-in;
       transform: translateX(0%);
+      transition: transform 0.5s ease-in;
     }
 
     .toggle .line1 {
@@ -159,82 +159,98 @@ body {
   //   }
   // }
 
-  .projects-area {
+  .about-header,
+  .projects-header {
+    padding-top: 80px;
+    padding-bottom: 8px;
+    line-height: normal;
+  }
+
+  .image-text-container {
+    height: 100%;
     width: 100%;
-    text-align: center;
-    overflow-x: hidden;
-    .projects-header {
-      padding-top: 70px;
-      padding-bottom: 8px;
-      line-height: normal;
-    }
-  }
-
-  .container-left {
-    float: left;
-    padding-left: 45px;
-  }
-
-  .container-center {
-    display: inline-block;
-    margin: 0 auto;
-  }
-
-  .container-right {
-    float: right;
-    padding-right: 45px;
-  }
-
-  // .container-left,
-  // .container-center,
-  // .container-right {
-  //   display: inline-flex;
-  //   *display: inline;
-  //   text-align: center;
-  // }
-
-  .box {
-    width: 350px;
-    padding: 40px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    margin: 20px;
-    box-sizing: border-box;
     overflow: hidden;
 
-    .icon {
-      width: 80px;
-      height: 80px;
-      color: #fff;
-      background: #000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
+    .profile-picture {
+      width: 34%;
+      float: left;
+      height: auto;
       border-radius: 50%;
-      font-size: 40px;
-      font-weight: 700;
-      transition: 1s ease;
+      margin: 10px;
     }
-    a {
-      text-decoration: none;
-      color: lightblue;
-    }
-    a:hover {
-      text-decoration: none;
-      color: $white;
-    }
-    img {
-      height: 70px;
+
+    .about-textbox {
+      width: 40%;
+      float: right;
+      text-align: center;
+      padding-top: 20px;
     }
   }
 
-  .box:nth-child(1) .icon {
-    box-shadow: 0 0 0 0 #e91e69;
-    background: #e91e63;
+  .about-area,
+  .projects-area {
+    text-align: center;
+    overflow-x: hidden;
   }
-  .box:nth-child(1):hover .icon {
-    box-shadow: 0 0 0 400px #e91e69;
+
+  .container {
+    height: 100%;
+    width: 100%;
+
+    .box {
+      display: inline-block;
+      *display: inline;
+      vertical-align: top;
+
+      width: 28%;
+      padding: 40px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      margin: 15px;
+      margin-bottom: 50px;
+      margin-top: 30px;
+      box-sizing: border-box;
+      overflow: hidden;
+
+      .icon {
+        width: 80px;
+        height: 80px;
+        color: #fff;
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        border-radius: 50%;
+        font-size: 40px;
+        font-weight: 700;
+        transition: 1s ease;
+      }
+      a {
+        text-decoration: none;
+        color: lightblue;
+      }
+      a:hover {
+        text-decoration: none;
+        color: $white;
+      }
+      img {
+        height: 70px;
+      }
+    }
+  }
+
+  .container .experience-shrink {
+    .box {
+      width: 80%;
+    }
+  }
+
+  .profile-picture {
+    float: left;
+    width: 34%;
+    height: auto;
+    border-radius: 50%;
   }
 
   footer {
@@ -242,6 +258,14 @@ body {
     background-color: $black;
     color: white;
   }
+}
+
+.box:nth-child(1) .icon {
+  box-shadow: 0 0 0 0 #e91e69;
+  background: #e91e63;
+}
+.box:nth-child(1):hover .icon {
+  box-shadow: 0 0 0 400px #e91e69;
 }
 
 @keyframes navLinkFade {

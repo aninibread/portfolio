@@ -29,28 +29,28 @@ function navTrans() {
   });
 }
 
-if ($(window).width() > 768) {
+if ($(window).width() > 940) {
   navTrans();
   navSlide();
 }
 
 ssm.addState({
   id: "mobile",
-  query: "(max-width: 767px)",
+  query: "(max-width: 940px)",
   onEnter: function () {
     $("nav").addClass("shrink");
+    $("container").addClass("experience-shrink");
     navSlide();
   },
 });
 
 ssm.addState({
   id: "desktop",
-  query: "(min-width: 767px)",
+  query: "(min-width: 940px)",
   onEnter: function () {
     $("nav").removeClass("shrink");
+    $("container").removeClass("experience-shrink");
     navTrans();
     navSlide();
   },
 });
-
-ssm.ready();
