@@ -97,16 +97,17 @@ body {
 
       li {
         opacity: 0;
-        padding: 38px 45px;
+        padding: 42px 45px;
       }
     }
     .burger {
       display: block;
+      margin-right: 8%;
       cursor: pointer;
     }
     .nav-active {
       transform: translateX(0%);
-      transition: transform 0.5s ease-in;
+      transition: transform 0.8s ease-in;
     }
 
     .toggle .line1 {
@@ -135,67 +136,45 @@ body {
   //   }
   // }
 
-  // .experiences-area,
-  // .projects-area,
-  // .interests-area,
-  // .about-area {
-  //   justify-content: space-around;
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   flex-direction: row;
-  //   align-items: center;
-  //   height: 700px;
+  .about-area {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 
-  //   .text-apart {
-  //     width: 65%;
-  //     height: 80%;
-  //   }
+    .about-container {
+      margin: 80px;
+      padding: 15px;
+      display: flex;
 
-  //   p {
-  //     font-size: 18px;
-  //     line-height: 28px;
-  //     color: #333;
-  //     text-align: justify;
-  //   }
-  // }
+      .about-image {
+        max-width: 300px;
+        flex: 0 0 300px;
 
-  .about-header,
+        .profile-picture {
+          max-width: 100%;
+          height: auto;
+          border-radius: 100%;
+        }
+      }
+
+      .about-text {
+        margin-left: 50px;
+      }
+    }
+  }
+
   .projects-header {
-    padding-top: 80px;
+    text-align: center;
     padding-bottom: 8px;
     line-height: normal;
-  }
-
-  .image-text-container {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-
-    .profile-picture {
-      width: 34%;
-      float: left;
-      height: auto;
-      border-radius: 50%;
-      margin: 10px;
-    }
-
-    .about-textbox {
-      width: 40%;
-      float: right;
-      text-align: center;
-      padding-top: 20px;
-    }
-  }
-
-  .about-area,
-  .projects-area {
-    text-align: center;
-    overflow-x: hidden;
   }
 
   .container {
     height: 100%;
     width: 100%;
+    text-align: center;
 
     .box {
       display: inline-block;
@@ -240,19 +219,6 @@ body {
     }
   }
 
-  .container .experience-shrink {
-    .box {
-      width: 80%;
-    }
-  }
-
-  .profile-picture {
-    float: left;
-    width: 34%;
-    height: auto;
-    border-radius: 50%;
-  }
-
   footer {
     width: 100%;
     background-color: $black;
@@ -276,5 +242,22 @@ body {
   to {
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+
+@media (max-width: 991px) {
+  .about-area {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    .about-image {
+      max-width: 100%;
+    }
+    .about-text {
+      margin-left: 0%;
+    }
   }
 }

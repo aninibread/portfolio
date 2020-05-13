@@ -11,7 +11,7 @@ function navSlide() {
         link.style.animation = "";
       } else {
         link.style.animation = `navLinkFade 0.5s ease forwards ${
-          index / 7 + 0.4
+          index / 5 + 0.8
         }s`;
       }
     });
@@ -40,6 +40,7 @@ ssm.addState({
   onEnter: function () {
     $("nav").addClass("shrink");
     $("container").addClass("experience-shrink");
+    $("about-image").addClass("move-up");
     navSlide();
   },
 });
@@ -50,6 +51,7 @@ ssm.addState({
   onEnter: function () {
     $("nav").removeClass("shrink");
     $("container").removeClass("experience-shrink");
+    $("about-image").removeClass("move-up");
     navTrans();
     navSlide();
   },
