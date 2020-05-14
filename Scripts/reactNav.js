@@ -21,7 +21,7 @@ function navSlide() {
 
 function navTrans() {
   $(window).on("scroll", function () {
-    if ($(this).scrollTop() > $("header").height() - 300) {
+    if ($(this).scrollTop() > $("header").height() - 700) {
       $("nav").addClass("black");
     } else {
       $("nav").removeClass("black");
@@ -35,12 +35,12 @@ if ($(window).width() > 940) {
 }
 
 ssm.addState({
-  id: "mobile",
+  id: "tablet",
   query: "(max-width: 940px)",
   onEnter: function () {
     $("nav").addClass("shrink");
-    $("container").addClass("experience-shrink");
-    $("about-image").addClass("move-up");
+    //$("container").addClass("experience-shrink");
+
     navSlide();
   },
 });
@@ -50,8 +50,8 @@ ssm.addState({
   query: "(min-width: 940px)",
   onEnter: function () {
     $("nav").removeClass("shrink");
-    $("container").removeClass("experience-shrink");
-    $("about-image").removeClass("move-up");
+    //$("container").removeClass("experience-shrink");
+
     navTrans();
     navSlide();
   },
