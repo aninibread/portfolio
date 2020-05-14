@@ -152,6 +152,7 @@ body {
 
     .about-image {
       flex: 0 0 27%;
+      margin-left: 5%;
 
       .profile-picture {
         max-width: 100%;
@@ -165,13 +166,14 @@ body {
     }
 
     .about-text {
-      margin-left: 6%;
+      margin-left: 7%;
+      margin-right: 5%;
     }
   }
 
   .projects-header {
     text-align: center;
-    padding-top: 70px;
+    padding-top: 100px;
     line-height: normal;
   }
 
@@ -249,7 +251,7 @@ body {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 650px) {
   .about-container {
     flex-direction: column;
 

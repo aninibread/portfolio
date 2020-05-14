@@ -21,7 +21,7 @@ function navSlide() {
 
 function navTrans() {
   $(window).on("scroll", function () {
-    if ($(this).scrollTop() > $("header").height() - 700) {
+    if ($(this).scrollTop() > $("header").height() - 335) {
       $("nav").addClass("black");
     } else {
       $("nav").removeClass("black");
@@ -35,12 +35,12 @@ if ($(window).width() > 940) {
 }
 
 ssm.addState({
-  id: "tablet",
+  id: "mobile",
   query: "(max-width: 940px)",
   onEnter: function () {
     $("nav").addClass("shrink");
     //$("container").addClass("experience-shrink");
-
+    navTrans();
     navSlide();
   },
 });
