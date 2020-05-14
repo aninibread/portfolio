@@ -137,37 +137,42 @@ body {
   // }
 
   .about-area {
-    width: 1200px;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+  }
 
-    .about-container {
-      margin: 80px;
-      padding: 15px;
-      display: flex;
+  .about-container {
+    margin: 70px;
+    padding: 15px;
+    display: flex;
 
-      .about-image {
-        max-width: 300px;
-        flex: 0 0 300px;
+    .about-image {
+      margin-left: 60px;
+      max-width: 30%;
+      flex: 0 0 30%;
 
-        .profile-picture {
-          max-width: 100%;
-          height: auto;
-          border-radius: 100%;
-        }
+      .profile-picture {
+        max-width: 100%;
+        height: auto;
+        border-radius: 100%;
       }
+    }
 
-      .about-text {
-        margin-left: 50px;
-      }
+    .about-header {
+      padding-bottom: 20px;
+    }
+
+    .about-text {
+      margin-left: 60px;
     }
   }
 
   .projects-header {
     text-align: center;
-    padding-bottom: 8px;
+    padding-top: 70px;
     line-height: normal;
   }
 
@@ -253,9 +258,13 @@ body {
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
+
     .about-image {
-      max-width: 100%;
+      margin-bottom: 50px;
+      width: 100%;
+      flex: 0 0 100%;
     }
+
     .about-text {
       margin-left: 0%;
     }
