@@ -97,7 +97,11 @@ body {
 
       li {
         opacity: 0;
-        padding: 42px 45px;
+        padding: 33px;
+        justify-content: center;
+        a {
+          font-size: 15px;
+        }
       }
     }
     .burger {
@@ -149,12 +153,14 @@ body {
     margin-top: 7%;
     padding: 2%;
     display: flex;
+    margin-bottom: 2%;
 
     .about-image {
       flex: 0 0 27%;
       margin-left: 5%;
 
       .profile-picture {
+        margin-top: 20px;
         max-width: 100%;
         height: auto;
         border-radius: 100%;
@@ -162,11 +168,12 @@ body {
     }
 
     .about-header {
-      padding-bottom: 20px;
+      padding-bottom: 30px;
     }
 
     .about-text {
-      margin-left: 7%;
+      margin-left: 9%;
+
       margin-right: 5%;
     }
   }
@@ -177,50 +184,87 @@ body {
     line-height: normal;
   }
 
-  .container {
-    height: 100%;
-    width: 100%;
-    text-align: center;
+  // .container {
+  //   height: 100%;
+  //   width: 100%;
+  //   text-align: center;
+  //   flex: wrap;
+
+  //   .box {
+  //     display: inline-block;
+  //     *display: inline;
+  //     vertical-align: top;
+
+  //     width: 28%;
+  //     padding: 40px;
+  //     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  //     border-radius: 5px;
+  //     margin: 15px;
+  //     margin-bottom: 50px;
+  //     margin-top: 30px;
+  //     box-sizing: border-box;
+  //     overflow: hidden;
+
+  //     .icon {
+  //       width: 80px;
+  //       height: 80px;
+  //       color: #fff;
+  //       background: #000;
+  //       display: flex;
+  //       justify-content: center;
+  //       align-items: center;
+  //       margin: 0 auto;
+  //       border-radius: 50%;
+  //       font-size: 40px;
+  //       font-weight: 700;
+  //       transition: 1s ease;
+  //     }
+  //     a {
+  //       text-decoration: none;
+  //       color: lightblue;
+  //     }
+  //     a:hover {
+  //       text-decoration: none;
+  //       color: $white;
+  //     }
+  //     img {
+  //       height: 70px;
+  //     }
+  //   }
+  // }
+
+  .project-container {
+    width: 86%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin: 3%;
+    margin-left: 7%;
 
     .box {
-      display: inline-block;
-      *display: inline;
-      vertical-align: top;
-
-      width: 28%;
-      padding: 40px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      border-radius: 5px;
-      margin: 15px;
-      margin-bottom: 50px;
-      margin-top: 30px;
-      box-sizing: border-box;
-      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 320px;
+      height: 420px;
+      margin: 20px;
 
-      .icon {
-        width: 80px;
-        height: 80px;
-        color: #fff;
-        background: #000;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        border-radius: 50%;
-        font-size: 40px;
+      .content {
+        padding: 30px;
+        text-align: center;
+      }
+
+      p {
+        padding: 20px 0;
+      }
+
+      h3 {
+        text-transform: uppercase;
+        font-size: 20px;
+        letter-spacing: 1px;
         font-weight: 700;
-        transition: 1s ease;
-      }
-      a {
-        text-decoration: none;
-        color: lightblue;
-      }
-      a:hover {
-        text-decoration: none;
-        color: $white;
-      }
-      img {
-        height: 70px;
       }
     }
   }
@@ -232,13 +276,13 @@ body {
   }
 }
 
-.box:nth-child(1) .icon {
-  box-shadow: 0 0 0 0 #e91e69;
-  background: #e91e63;
-}
-.box:nth-child(1):hover .icon {
-  box-shadow: 0 0 0 400px #e91e69;
-}
+// .box:nth-child(1) .icon {
+//   box-shadow: 0 0 0 0 #e91e69;
+//   background: #e91e63;
+// }
+// .box:nth-child(1):hover .icon {
+//   box-shadow: 0 0 0 400px #e91e69;
+// }
 
 @keyframes navLinkFade {
   from {
@@ -264,5 +308,18 @@ body {
     .about-text {
       margin: 4%;
     }
+  }
+
+  .projects-header {
+    padding-bottom: 25px;
+  }
+  .project-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .project-container {
+    justify-content: center;
   }
 }
