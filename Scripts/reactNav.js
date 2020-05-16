@@ -39,7 +39,6 @@ ssm.addState({
   query: "(max-width: 940px)",
   onEnter: function () {
     $("nav").addClass("shrink");
-    //$("container").addClass("experience-shrink");
     navTrans();
     navSlide();
   },
@@ -50,8 +49,6 @@ ssm.addState({
   query: "(min-width: 940px)",
   onEnter: function () {
     $("nav").removeClass("shrink");
-    //$("container").removeClass("experience-shrink");
-
     navTrans();
     navSlide();
   },
