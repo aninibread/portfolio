@@ -1,4 +1,5 @@
 @import "_config.scss";
+$break-point-1: 1300px;
 
 html {
   scroll-behavior: smooth;
@@ -242,6 +243,10 @@ body {
     margin: 3%;
     margin-left: 7%;
 
+    @media screen and (max-width: $break-point-1) {
+      justify-content: center;
+    }
+
     .box {
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
       display: flex;
@@ -252,12 +257,12 @@ body {
       margin: 20px;
 
       .content {
-        padding: 30px;
+        padding: 9%;
         text-align: center;
       }
 
       p {
-        padding: 20px 0;
+        padding: 11% 0;
       }
 
       h3 {
@@ -313,12 +318,6 @@ body {
   .projects-header {
     padding-bottom: 25px;
   }
-  .project-container {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 1200px) {
   .project-container {
     justify-content: center;
   }
