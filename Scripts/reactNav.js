@@ -29,14 +29,12 @@ function navTrans() {
   });
 }
 
-$(".panel-heading").hover(
-  function () {
-    $(".panel-collapse").fadeIn();
-  },
-  function () {
-    $(".panel-collapse").fadeOut();
-  }
-);
+$(".panel-heading").mouseenter(function () {
+  $(".panel-collapse").fadeIn();
+});
+$(".panel-collapse").mouseleave(function () {
+  $(".panel-collapse").fadeOut();
+});
 
 if ($(window).width() > 940) {
   navTrans();
