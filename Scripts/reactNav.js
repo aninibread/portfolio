@@ -29,6 +29,15 @@ function navTrans() {
   });
 }
 
+$(".panel-heading").hover(
+  function () {
+    $(".panel-collapse").fadeIn();
+  },
+  function () {
+    $(".panel-collapse").fadeOut();
+  }
+);
+
 if ($(window).width() > 940) {
   navTrans();
   navSlide();
