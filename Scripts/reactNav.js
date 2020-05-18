@@ -51,23 +51,6 @@ function onHover() {
         $(this).children(".face2").fadeOut();
       }
     );
-
-  const button = document.querySelectorAll(".readMore");
-  buttons.forEach((btn) => {
-    btn.addEventListener("click", function (e) {
-      let x = e.clientX - e.target.offsetLeft;
-      let y = e.clinentY - e.target.offsetTop;
-
-      let ripples = document.createElement("span");
-      ripples.style.left = x + "px";
-      ripples.style.top = y + "px";
-      this.appendChild(ripples);
-
-      setTimeout(() => {
-        ripples.remove();
-      }, 1000);
-    });
-  });
 }
 
 if ($(window).width() > 940) {
