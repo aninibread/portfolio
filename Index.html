@@ -20,7 +20,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+
   </head>
   <body>
     
@@ -73,80 +73,76 @@
             </div>
         
         </div>
+
         <div class="projects-area" id="Projects">
-            <h1 class="projects-header">
-                My Projects
-            </h1>
-            <div class="projects-container panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="card panel panel-default">
-                    <div class="face face1 panel-heading " role="tab" id="headingOne">
-                        <a class="nodecoration panel-title lead" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
-                          
-                            <div class="pro-content">
-                                <img src="Assets/catUp.png">
-                                <h3>Kitty Jump Game</h3>
-                            </div>
-                        </a>
 
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse face face2" role="tabpanel" aria-labelledby="headingOne">
-                        <div class="pro2-content panel-body">
-                            <p> 
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-                            </p>
-                            <a href="#">Read More</a>
-                        </div>
+            <h1 class="projects-header">My Projects</h1>
 
+            <div class="projects-container" id="accordion">
+                <div class="card">
+                    <div class="face face1 card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="pro-content">
+                                    <img src="Assets/catUp.png">
+                                    <h3>Kitty Jump Game</h3>
+                                </div>
+                            </button>
+                        </h5>
                     </div>
-                    
+                  <div id="collapseOne" class="collapse face face2 " aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body pro2-content">
+                        <p> 
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                        </p>
+                        <a class="readMore" href="#">Read More</a>
+                    </div>
+                  </div>
                 </div>
-                <div class="card panel panel-default">
-                    <div class="face face1 panel-heading " role="tab" id="headingTwo">
-                        <a class="nodecoration panel-title lead collapsed"  role="button" data-toggle="collapse"  aria-expanded="false" aria-controls="collapseTwo">
-                          
-                            <div class="pro-content">
-                                <img src="Assets/catUp.png">
-                                <h3>Kitty Jump Game</h3>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse face face2" role="tabpanel" aria-labelledby="headingTwo">
-                        <div class="pro2-content panel-body">
-                            <p> 
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-                            </p>
-                            <a href="#">Read More</a>
+                <div class="card">
+                  <div class="face face1 card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div class="pro-content">
+                            <img src="Assets/catUp.png">
+                            <h3>Kitty Jump Game</h3>
                         </div>
-
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse face face2 " aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body pro2-content">
+                        <p> 
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                        </p>
+                        <a class="readMore" href="#">Read More</a>
                     </div>
-                    
+                  </div>
                 </div>
-                <div class="card panel panel-default">
-                    <div class="face face1 panel-heading " role="tab" id="headingThree">
-                
-                        <a class="nodecoration panel-title lead collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
-                          
-                            <div class="pro-content">
-                                <img src="Assets/catUp.png">
-                                <h3>Kitty Jump Game</h3>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div id="collapseThree" class="panel-collapse collapse face face2" role="tabpanel" aria-labelledby="headingThree">
-                        <div class="pro2-content panel-body">
-                            <p> 
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-                            </p>
-                            <a href="#">Read More</a>
+                <div class="card">
+                  <div class="card-header face1 face" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div class="pro-content">
+                            <img src="Assets/catUp.png">
+                            <h3>Kitty Jump Game</h3>
                         </div>
-
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="face face2 collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body pro2-content">
+                        <p> 
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                        </p>
+                        <a class="readMore" href="#">Read More</a>
                     </div>
-                    
+                  </div>
                 </div>
-            </div>
-        </div> 
+              </div>
+
+        </div>
+        
 
         <div class="experiences-area" id="Experiences">
             <h1 class="experiences-header">
@@ -164,7 +160,7 @@
                     <div class="content">
                         <h3>Service Name</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                        <a href="#">Read More</a>
+                        <a class="readMore" href="#">Read More</a>
                         
                     </div>
                 </div>
@@ -174,7 +170,7 @@
                     <div class="content">
                         <h3>Service Name</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                        <a href="#">Read More</a>
+                        <a class="readMore" class="readMore" href="#">Read More</a>
                         
                     </div>
                 </div>
@@ -184,7 +180,7 @@
                     <div class="content">
                         <h3>Service Name</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                        <a href="#">Read More</a>
+                        <a class="readMore" href="#">Read More</a>
                         
                     </div>
                 </div>
@@ -193,7 +189,7 @@
                     <div class="content">
                         <h3>Service Name</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                        <a href="#">Read More</a>
+                        <a class="readMore" href="#">Read More</a>
                         
                     </div>
                 </div>
@@ -202,7 +198,7 @@
                     <div class="content">
                         <h3>Service Name</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                        <a href="#">Read More</a>
+                        <a class="readMore" href="#">Read More</a>
                         
                     </div>
                 </div>
@@ -211,7 +207,7 @@
                     <div class="content">
                         <h3>Service Name</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                        <a href="#">Read More</a>
+                        <a class="readMore" href="#">Read More</a>
                         
                     </div>
                 </div>

@@ -29,16 +29,51 @@ function navTrans() {
   });
 }
 
-$(".panel-heading").mouseenter(function () {
-  $(".panel-collapse").fadeIn();
-});
-$(".panel-collapse").mouseleave(function () {
-  $(".panel-collapse").fadeOut();
-});
+// $(".face1")
+//   .parent(".card")
+//   .hover(
+//     function () {
+//       $(this).children(".face2").collapse("show");
+//     },
+//     function () {
+//       $(this).children(".face2").collapse("hide");
+//     }
+//   );
+
+function onHover() {
+  $(".face1")
+    .parent(".card")
+    .hover(
+      function () {
+        $(this).children(".face2").fadeIn();
+      },
+      function () {
+        $(this).children(".face2").fadeOut();
+      }
+    );
+
+  const button = document.querySelectorAll(".readMore");
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", function (e) {
+      let x = e.clientX - e.target.offsetLeft;
+      let y = e.clinentY - e.target.offsetTop;
+
+      let ripples = document.createElement("span");
+      ripples.style.left = x + "px";
+      ripples.style.top = y + "px";
+      this.appendChild(ripples);
+
+      setTimeout(() => {
+        ripples.remove();
+      }, 1000);
+    });
+  });
+}
 
 if ($(window).width() > 940) {
   navTrans();
   navSlide();
+  onHover();
 }
 
 ssm.addState({
@@ -48,6 +83,7 @@ ssm.addState({
     $("nav").addClass("shrink");
     navTrans();
     navSlide();
+    onHover();
   },
 });
 
@@ -58,5 +94,6 @@ ssm.addState({
     $("nav").removeClass("shrink");
     navTrans();
     navSlide();
+    onHover();
   },
 });
