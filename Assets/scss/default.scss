@@ -267,7 +267,7 @@ body {
             display: inline-block;
             color: #fff;
             text-transform: uppercase;
-            font-weight: 500;
+            font-weight: 600;
             padding: 6px;
             background-color: lightgrey;
             box-shadow: -6px -6px 20px rgba(255, 255, 255, 0.1),
@@ -344,7 +344,7 @@ body {
         display: inline-block;
         color: #fff;
         text-transform: uppercase;
-        font-weight: 500;
+        font-weight: 600;
         padding: 6px;
         letter-spacing: 1px;
         background-color: lightgrey;
@@ -373,41 +373,22 @@ body {
   .readMore:hover {
     background-image: linear-gradient(
       to right,
-      #e7484f,
-      #e7484f 16.65%,
-      #f68b1d 16.65%,
-      #f68b1d 33.3%,
-      #fced00 33.3%,
-      #fced00 49.95%,
-      #009e4f 49.95%,
-      #009e4f 66.6%,
-      #00aac3 66.6%,
-      #00aac3 83.25%,
-      #732982 83.25%,
-      #732982 100%,
-      #e7484f 100%
+      #ff9fbb,
+      #ff9fbb 16.65%,
+      #ffc8ae 16.65%,
+      #ffc8ae 33.3%,
+      #fcffa6 33.3%,
+      #fcffa6 49.95%,
+      #bdffb2 49.95%,
+      #bdffb2 66.6%,
+      #bdd8ff 66.6%,
+      #bdd8ff 83.25%,
+      #c6aeff 83.25%,
+      #c6aeff 100%,
+      #ff9fbb 100%
     );
-    animation: slidebg 2s linear infinite;
+    animation: slidebg 5s linear infinite;
   }
-}
-
-.a {
-  color: #e7484f;
-}
-.b {
-  color: #f68b1d;
-}
-.c {
-  color: #fced00;
-}
-.d {
-  color: #009e4f;
-}
-.e {
-  color: #00aac3;
-}
-.f {
-  color: #732982;
 }
 
 @keyframes navLinkFade {
