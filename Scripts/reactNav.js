@@ -29,17 +29,6 @@ function navTrans() {
   });
 }
 
-// $(".face1")
-//   .parent(".card")
-//   .hover(
-//     function () {
-//       $(this).children(".face2").collapse("show");
-//     },
-//     function () {
-//       $(this).children(".face2").collapse("hide");
-//     }
-//   );
-
 function onHover() {
   $(".face1")
     .parent(".card")

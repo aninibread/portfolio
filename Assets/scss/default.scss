@@ -179,6 +179,7 @@ body {
     }
   }
 
+  .interests-header,
   .projects-header,
   .experiences-header {
     text-align: center;
@@ -270,8 +271,6 @@ body {
             font-weight: 600;
             padding: 6px;
             background-color: lightgrey;
-            box-shadow: -6px -6px 20px rgba(255, 255, 255, 0.1),
-              6px 6px 20px rgba(0, 0, 0, 0.1);
             letter-spacing: 1px;
           }
         }
@@ -294,7 +293,7 @@ body {
     padding-top: 50px;
   }
 
-  .experiences-ex-container {
+  .experiences-container {
     width: 86%;
     display: flex;
     justify-content: space-between;
@@ -348,8 +347,6 @@ body {
         padding: 6px;
         letter-spacing: 1px;
         background-color: lightgrey;
-        box-shadow: -6px -6px 20px rgba(255, 255, 255, 0.1),
-          6px 6px 20px rgba(0, 0, 0, 0.1);
       }
     }
 
@@ -357,6 +354,14 @@ body {
       box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.5),
         inset 6px 6px 20px rgba(0, 0, 0, 0.05);
     }
+
+    .work {
+      width: 450px;
+      height: 500px;
+    }
+  }
+
+  .carousel {
   }
 
   footer {
