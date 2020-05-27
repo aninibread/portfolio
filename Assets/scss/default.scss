@@ -1,6 +1,7 @@
 @import "_config.scss";
 $break-point-1: 1300px;
 $break-point-2: 650px;
+$break-point-3: 991px;
 
 html {
   scroll-behavior: smooth;
@@ -361,7 +362,63 @@ body {
     }
   }
 
-  .carousel {
+  .interests-area {
+    justify-content: center;
+    align-self: center;
+    min-height: 100vh;
+  }
+
+  .interests-container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: minmax(100px, auto);
+    margin: 40px;
+    grid-auto-flow: dense;
+
+    @media screen and (max-width: $break-point-3) {
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+      grid-template-columns: minmax(auto, auto);
+
+      .interests-box {
+        grid-column: unset;
+        grid-row: unset;
+      }
+    }
+
+    .interests-box {
+      padding: 20px;
+      display: grid;
+      font-size: 20px;
+      place-items: center;
+      text-align: center;
+      transition: 0.5s;
+
+      img {
+        max-width: 100px;
+        margin-bottom: 10px;
+      }
+    }
+    .interests-box:hover {
+      background: #e91e63;
+    }
+
+    .interests-box:nth-child(1) {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    .interests-box:nth-child(2) {
+      grid-column: span 1;
+      grid-row: span 2;
+    }
+    .interests-box:nth-child(4) {
+      grid-column: span 1;
+      grid-row: span 2;
+    }
+    .interests-box:nth-child(5) {
+      grid-column: span 3;
+      grid-row: span 1;
+    }
   }
 
   footer {
