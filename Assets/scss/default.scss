@@ -1,7 +1,7 @@
 @import "_config.scss";
 $break-point-1: 1300px;
 $break-point-2: 650px;
-$break-point-3: 991px;
+$break-point-3: 910px;
 
 html {
   scroll-behavior: smooth;
@@ -371,9 +371,12 @@ body {
   .interests-container {
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-template-columns: minmax(100px, auto);
-    margin: 40px;
+    margin-left: 11%;
+    margin-right: 11%;
+    margin-top: 9%;
+    margin-bottom: 9%;
     grid-auto-flow: dense;
 
     @media screen and (max-width: $break-point-3) {
@@ -381,15 +384,14 @@ body {
       grid-template-columns: minmax(auto, auto);
 
       .interests-box {
-        grid-column: unset;
-        grid-row: unset;
+        grid-column: unset !important;
+        grid-row: unset !important;
       }
     }
 
     .interests-box {
-      padding: 20px;
+      padding: 4%;
       display: grid;
-      font-size: 20px;
       place-items: center;
       text-align: center;
       transition: 0.5s;
@@ -410,6 +412,10 @@ body {
     .interests-box:nth-child(2) {
       grid-column: span 1;
       grid-row: span 2;
+    }
+    .interests-box:nth-child(3) {
+      grid-column: span 2;
+      grid-row: span 1;
     }
     .interests-box:nth-child(4) {
       grid-column: span 1;
