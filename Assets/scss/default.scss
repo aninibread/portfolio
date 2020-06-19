@@ -13,8 +13,7 @@ body {
   padding: 0;
 
   .homeMenu {
-    background: linear-gradient(rgba(0, 0, 100, 0.5), rgba(0, 0, 100, 0.5)),
-      url(backdrop.jpg);
+    background: url(background.png);
     background-size: cover;
     background-position: center;
     color: $white;
@@ -54,7 +53,8 @@ body {
 
           a {
             text-decoration: none;
-            font-size: 14px;
+            font-size: 16.5px;
+            font-weight: 500;
             line-height: normal;
             letter-spacing: 3px;
             color: $white;
@@ -359,71 +359,6 @@ body {
     .work {
       width: 450px;
       height: 500px;
-    }
-  }
-
-  .interests-area {
-    justify-content: center;
-    align-self: center;
-    min-height: 100vh;
-  }
-
-  .interests-container {
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-template-columns: minmax(100px, auto);
-    margin-left: 11%;
-    margin-right: 11%;
-    margin-top: 9%;
-    margin-bottom: 9%;
-    grid-auto-flow: dense;
-
-    @media screen and (max-width: $break-point-3) {
-      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-      grid-template-columns: minmax(auto, auto);
-
-      .interests-box {
-        grid-column: unset !important;
-        grid-row: unset !important;
-      }
-    }
-
-    .interests-box {
-      padding: 4%;
-      display: grid;
-      place-items: center;
-      text-align: center;
-      transition: 0.5s;
-
-      img {
-        max-width: 100px;
-        margin-bottom: 10px;
-      }
-    }
-    .interests-box:hover {
-      background: #e91e63;
-    }
-
-    .interests-box:nth-child(1) {
-      grid-column: span 2;
-      grid-row: span 2;
-    }
-    .interests-box:nth-child(2) {
-      grid-column: span 1;
-      grid-row: span 2;
-    }
-    .interests-box:nth-child(3) {
-      grid-column: span 2;
-      grid-row: span 1;
-    }
-    .interests-box:nth-child(4) {
-      grid-column: span 1;
-      grid-row: span 2;
-    }
-    .interests-box:nth-child(5) {
-      grid-column: span 3;
-      grid-row: span 1;
     }
   }
 

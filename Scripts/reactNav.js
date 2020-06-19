@@ -42,7 +42,7 @@ function onHover() {
     );
 }
 
-if ($(window).width() > 940) {
+if ($(window).width() > 920) {
   navTrans();
   navSlide();
   onHover();
@@ -50,7 +50,7 @@ if ($(window).width() > 940) {
 
 ssm.addState({
   id: "mobile",
-  query: "(max-width: 940px)",
+  query: "(max-width: 920px)",
   onEnter: function () {
     $("nav").addClass("shrink");
     navTrans();
@@ -61,7 +61,7 @@ ssm.addState({
 
 ssm.addState({
   id: "desktop",
-  query: "(min-width: 940px)",
+  query: "(min-width: 920px)",
   onEnter: function () {
     $("nav").removeClass("shrink");
     navTrans();
