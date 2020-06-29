@@ -24,8 +24,18 @@ body {
       font-weight: bold;
       text-align: center;
       justify-content: center;
-      padding-top: 220px;
+      padding-top: 350px;
       font-family: "Poller One", cursive;
+
+      @media screen and (max-width: 580px) {
+        font-size: 130px;
+      }
+      @media screen and (max-width: 520px) {
+        font-size: 100px;
+      }
+      @media screen and (max-width: 390px) {
+        font-size: 90px;
+      }
     }
 
     .sunflower-img {
@@ -46,6 +56,42 @@ body {
       @media screen and (max-width: 980px) {
         left: 570px;
         top: -470px;
+      }
+      @for $i from 1 through 28 {
+        @media screen and (max-width: 980px - ($i*20)) {
+          left: 570px - ($i * 10);
+        }
+      }
+      @media screen and (max-width: 580px) {
+        left: 350px;
+        top: -430px;
+      }
+      @for $i from 1 through 3 {
+        @media screen and (max-width: 579px - ($i*20)) {
+          left: 350px - ($i * 10);
+        }
+      }
+      @media screen and (max-width: 520px) {
+        left: 310px;
+        top: -335px;
+        height: 150px;
+        width: auto;
+      }
+      @for $i from 1 through 7 {
+        @media screen and (max-width: 520px - ($i*20)) {
+          left: 310px - ($i * 11);
+        }
+      }
+      @media screen and (max-width: 390px) {
+        left: 230px;
+        top: -290px;
+        height: 130px;
+        width: auto;
+      }
+      @for $i from 1 through 100 {
+        @media screen and (max-width: 390px - ($i*20)) {
+          left: 230px - ($i * 11);
+        }
       }
     }
 
