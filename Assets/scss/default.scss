@@ -17,27 +17,88 @@ body {
     background-position: center;
     background-color: #fcdb04;
     height: 100vh;
+    overflow: hidden;
 
-    .main-text {
-      color: #f15b41;
-      font-size: 150px;
-      font-weight: bold;
-      text-align: center;
-      justify-content: center;
-
-      padding-top: 240px;
-      font-family: "Poller One", cursive;
-
-      @media screen and (max-width: 580px) {
-        font-size: 130px;
-      }
-      @media screen and (max-width: 520px) {
-        font-size: 100px;
-      }
-      @media screen and (max-width: 390px) {
+    .header-text {
+      padding-top: 153px;
+      .sub-text {
+        text-align: left;
+        padding-left: 110px;
+        font-family: "Mali", cursive;
         font-size: 90px;
+        font-weight: 500;
+        color: #f15b41;
+
+        @for $i from 1 through 7 {
+          @media screen and (max-width: 1210px - ($i*10)) {
+            padding-left: 110px - ($i * 10);
+          }
+        }
+        @media screen and (max-width: 1070px) {
+          font-size: 80px;
+        }
+        @for $i from 1 through 10 {
+          @media screen and (max-width: 1040px - ($i*10)) {
+            padding-left: 60px - ($i * 10);
+          }
+        }
+        @media screen and (max-width: 979px) {
+          padding-left: 220px;
+          font-size: 90px;
+        }
+        @for $i from 1 through 25 {
+          @media screen and (max-width: 920px - ($i*10)) {
+            padding-left: 220px - ($i * 6);
+          }
+        }
+        @media screen and (max-width: 580px) {
+          padding-left: 75px;
+          font-size: 75px;
+        }
+        @for $i from 1 through 5 {
+          @media screen and (max-width: 579px - ($i*10)) {
+            padding-left: 75px - ($i * 6);
+          }
+        }
+        @media screen and (max-width: 520px) {
+          padding-left: 75px;
+          font-size: 60px;
+        }
+        @for $i from 1 through 10 {
+          @media screen and (max-width: 519px - ($i*10)) {
+            padding-left: 75px - ($i * 4);
+          }
+        }
+        @media screen and (max-width: 390px) {
+          padding-left: 50px;
+          font-size: 50px;
+        }
+        @for $i from 1 through 100 {
+          @media screen and (max-width: 389px - ($i*10)) {
+            padding-left: 50px - ($i * 4);
+          }
+        }
+      }
+      .main-text {
+        color: #f15b41;
+        font-size: 150px;
+        font-weight: bold;
+        text-align: center;
+        justify-content: center;
+        font-family: "Poller One", cursive;
+
+        @media screen and (max-width: 580px) {
+          font-size: 130px;
+        }
+        @media screen and (max-width: 520px) {
+          font-size: 100px;
+        }
+        @media screen and (max-width: 390px) {
+          font-size: 90px;
+        }
       }
     }
+
     .slide-txt {
       position: absolute;
       align-content: right;
@@ -58,7 +119,7 @@ body {
           left: 435px - ($i * 11);
         }
       }
-      @media screen and (max-width: 980px) {
+      @media screen and (max-width: 979px) {
         left: 570px;
         top: -470px;
       }
