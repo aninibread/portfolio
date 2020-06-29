@@ -21,7 +21,7 @@ function navSlide() {
 
 function navTrans() {
   $(window).on("scroll", function () {
-    if ($(this).scrollTop() > $("header").height() - 335) {
+    if ($(this).scrollTop() > $("header").height() - 450) {
       $("nav").addClass("black");
     } else {
       $("nav").removeClass("black");
