@@ -24,7 +24,8 @@ body {
       font-weight: bold;
       text-align: center;
       justify-content: center;
-      padding-top: 350px;
+
+      padding-top: 240px;
       font-family: "Poller One", cursive;
 
       @media screen and (max-width: 580px) {
@@ -36,6 +37,10 @@ body {
       @media screen and (max-width: 390px) {
         font-size: 90px;
       }
+    }
+    .slide-txt {
+      position: absolute;
+      align-content: right;
     }
 
     .sunflower-img {
@@ -153,7 +158,7 @@ body {
   }
 
   nav.shrink {
-    background-color: $black;
+    background-color: #44210f;
     .nav-links {
       position: absolute;
       right: 0px;
@@ -275,6 +280,7 @@ body {
       align-items: center;
       border: none;
       margin: 20px;
+      background-color: #fcdb04;
 
       panel-title {
         text-decoration: none;
@@ -539,13 +545,6 @@ body {
     transform: translateX(0px);
   }
 }
-
-@keyframes slidebg {
-  to {
-    background-position: 20vw;
-  }
-}
-
 @-moz-keyframes spin {
   100% {
     -moz-transform: rotate(360deg);
