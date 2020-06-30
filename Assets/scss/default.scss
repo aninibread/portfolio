@@ -87,6 +87,9 @@ body {
           }
         }
       }
+      .sub-text:hover {
+        animation: bounce 1.5s ease-in-out;
+      }
 
       .main-text {
         color: #f15b41;
@@ -108,12 +111,28 @@ body {
       }
     }
 
+    .slide-txt {
+      color: white;
+      float: right;
+    }
+    .slide-txt {
+      li {
+        list-style: none;
+        font-weight: 500;
+        font-size: 25px;
+        overflow: hidden;
+      }
+    }
+
     .bee-gif {
       position: absolute;
-      height: 45px;
+      height: 50px;
       width: auto;
       top: 275px;
       left: 1070px;
+    }
+    .bee-gif:hover {
+      animation: fly 2s ease-in-out;
     }
 
     .slide-txt {
@@ -213,7 +232,7 @@ body {
           }
           a:hover {
             text-decoration: none;
-            color: $red;
+            color: #f15b41;
           }
         }
       }
@@ -577,13 +596,16 @@ body {
         transform: scale(1.1);
       }
       .social-icons .fa-linkedin {
-        background-color: #0085ae;
+        background-color: #fbb50a;
       }
       .social-icons .fa-github-alt {
-        background-color: grey;
+        background-color: #fbdb04;
       }
       .social-icons .fa-envelope {
-        background-color: tomato;
+        background-color: #fa8f28;
+      }
+      .social-icons .fa-file-pdf {
+        background-color: #f15b41;
       }
     }
   }
@@ -643,5 +665,44 @@ body {
 @keyframes slidebg {
   to {
     background-position: 20vw;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  80% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fly {
+  0% {
+    -webkit-transform: translate(0) scaleX(1);
+  }
+  0.01% {
+    -webkit-transform: translate(0) scaleX(1);
+  }
+  49.99% {
+    -webkit-transform: translate(300px) scaleX(1);
+  }
+  50% {
+    -webkit-transform: translate(300px) scaleX(-1);
+  }
+  50.01% {
+    -webkit-transform: translate(300px) scaleX(-1);
+  }
+  99.99% {
+    -webkit-transform: translate(0) scaleX(-1);
+  }
+  100% {
+    -webkit-transform: translate(0) scaleX(1);
   }
 }
