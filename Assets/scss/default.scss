@@ -12,6 +12,13 @@ body {
   margin: 0;
   padding: 0;
 
+  h1 {
+    padding-bottom: 30px;
+    color: #f15b41;
+    font-family: "Fredoka One", cursive;
+    font-size: 50px;
+  }
+
   .homeMenu {
     background-size: cover;
     background-position: center;
@@ -88,7 +95,7 @@ body {
         }
       }
       .sub-text:hover {
-        animation: bounce 1.5s ease-in-out;
+        animation: bounce 1.5s infinite;
       }
 
       .main-text {
@@ -111,41 +118,51 @@ body {
       }
     }
 
-    .slide-txt {
-      color: white;
-      float: right;
+    .slide-wrapper {
+      position: absolute;
+      color: #f15b41;
+      font-size: 32px;
+      font-family: "Fredoka One", cursive;
+      font-style: normal;
+      font-weight: 300;
+      top: 500px;
+      left: 920px;
     }
-    .slide-txt {
-      li {
-        list-style: none;
-        font-weight: 500;
-        font-size: 25px;
-        overflow: hidden;
-      }
+    .slide-wrapper:hover {
+      animation: bounce 1.5s infinite;
+    }
+
+    .floating {
+      animation-name: floating;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      margin-left: 30px;
+      margin-top: 5px;
+    }
+
+    span:before {
+      content: "";
+      animation: main-text infinite 8s;
     }
 
     .bee-gif {
       position: absolute;
-      height: 50px;
+      height: 60px;
       width: auto;
-      top: 275px;
-      left: 1070px;
+      top: 250px;
+      left: 1040px;
     }
-    .bee-gif:hover {
-      animation: fly 2s ease-in-out;
-    }
-
-    .slide-txt {
-      position: absolute;
-      align-content: right;
-    }
+    // .bee-gif:hover {
+    //   animation: fly 2s ease-in-out;
+    // }
 
     .sunflower-img {
       height: 200px;
       width: auto;
       position: relative;
       left: 435px;
-      top: -290px;
+      top: -299px;
       -webkit-animation: spin 7s linear infinite;
       -moz-animation: spin 7s linear infinite;
       animation: spin 7s linear infinite;
@@ -158,7 +175,7 @@ body {
       @media screen and (max-width: 992px) {
         height: 180px;
         left: 310px;
-        top: -263px;
+        top: -270px;
       }
       @for $i from 1 through 28 {
         @media screen and (max-width: 991px - ($i*20)) {
@@ -167,7 +184,7 @@ body {
       }
       @media screen and (max-width: 862px) {
         left: 490px;
-        top: -410px;
+        top: -420px;
       }
       @for $i from 1 through 40 {
         @media screen and (max-width: 861px - ($i*20)) {
@@ -176,7 +193,7 @@ body {
       }
       @media screen and (max-width: 520px) {
         left: 310px;
-        top: -335px;
+        top: -345px;
         height: 150px;
         width: auto;
       }
@@ -224,10 +241,9 @@ body {
 
           a {
             text-decoration: none;
-            font-size: 16.5px;
+            font-size: 20px;
             font-weight: 500;
             line-height: normal;
-            letter-spacing: 3px;
             color: $white;
           }
           a:hover {
@@ -340,14 +356,10 @@ body {
       }
     }
 
-    .about-header {
-      padding-bottom: 30px;
-    }
-
     .about-text {
       margin-left: 9%;
-
       margin-right: 5%;
+      color: brown;
     }
   }
 
@@ -683,26 +695,59 @@ body {
   }
 }
 
-@keyframes fly {
+// @keyframes fly {
+//   0% {
+//     -webkit-transform: translate(0) scaleX(1);
+//   }
+//   0.01% {
+//     -webkit-transform: translate(0) scaleX(1);
+//   }
+//   49.99% {
+//     -webkit-transform: translate(300px) scaleX(1);
+//   }
+//   50% {
+//     -webkit-transform: translate(300px) scaleX(-1);
+//   }
+//   50.01% {
+//     -webkit-transform: translate(300px) scaleX(-1);
+//   }
+//   99.99% {
+//     -webkit-transform: translate(0) scaleX(-1);
+//   }
+//   100% {
+//     -webkit-transform: translate(0) scaleX(1);
+//   }
+// }
+
+@keyframes main-text {
   0% {
-    -webkit-transform: translate(0) scaleX(1);
+    content: "A DEVELOPER";
   }
-  0.01% {
-    -webkit-transform: translate(0) scaleX(1);
+  20% {
+    content: "AN ENGINEER";
   }
-  49.99% {
-    -webkit-transform: translate(300px) scaleX(1);
+  40% {
+    content: "A CREATOR";
   }
-  50% {
-    -webkit-transform: translate(300px) scaleX(-1);
+  60% {
+    content: "A DESIGNER";
   }
-  50.01% {
-    -webkit-transform: translate(300px) scaleX(-1);
-  }
-  99.99% {
-    -webkit-transform: translate(0) scaleX(-1);
+  80% {
+    content: "A THINKER";
   }
   100% {
-    -webkit-transform: translate(0) scaleX(1);
+    content: "A LEARNER";
+  }
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 15px);
+  }
+  to {
+    transform: translate(0, -0px);
   }
 }
