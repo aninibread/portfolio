@@ -462,8 +462,13 @@ body {
         margin: 4%;
       }
     }
+    a {
+      color: #f15b41;
+      font-weight: bold;
+    }
     a:hover {
       text-decoration: none;
+      color: brown;
     }
 
     .about-image {
@@ -504,7 +509,7 @@ body {
 
     .hovereffect:hover p.icon-links a:hover,
     .hovereffect:hover p.icon-links a:focus {
-      color: #fbba00;
+      color: #f15b41;
     }
 
     .hovereffect p.icon-links a {
