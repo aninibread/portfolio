@@ -67,12 +67,15 @@ body {
           }
         }
         @media screen and (max-width: 862px) {
-          padding-left: 160px;
-          font-size: 75px;
+          padding-left: 10px;
+          font-size: 70px;
+        }
+        @media screen and (max-width: 764px) {
+          padding-left: 140px;
         }
         @for $i from 1 through 40 {
-          @media screen and (max-width: 861px - ($i*10)) {
-            padding-left: 160px - ($i * 3);
+          @media screen and (max-width: 763px - ($i*10)) {
+            padding-left: 140px - ($i * 4);
           }
         }
         @media screen and (max-width: 520px) {
@@ -109,6 +112,9 @@ body {
         @media screen and (max-width: 992px) {
           font-size: 130px;
         }
+        @media screen and (max-width: 862px) {
+          font-size: 115px;
+        }
         @media screen and (max-width: 520px) {
           font-size: 100px;
         }
@@ -127,6 +133,56 @@ body {
       font-weight: 300;
       top: 500px;
       left: 920px;
+      @for $i from 1 through 13 {
+        @media screen and (max-width: 1260px - ($i*20)) {
+          left: 920px - ($i * 12);
+        }
+      }
+      @media screen and (max-width: 992px) {
+        left: 720px;
+        top: 460px;
+      }
+      @for $i from 1 through 13 {
+        @media screen and (max-width: 991px - ($i*10)) {
+          left: 720px - ($i * 10);
+        }
+      }
+      @media screen and (max-width: 862px) {
+        left: 530px;
+        top: 430px;
+      }
+      @for $i from 1 through 4 {
+        @media screen and (max-width: 861px - ($i*10)) {
+          left: 530px - ($i * 6);
+        }
+      }
+      @media screen and (max-width: 764px) {
+        left: 350px;
+        top: 570px;
+      }
+      @for $i from 1 through 23 {
+        @media screen and (max-width: 763px - ($i*10)) {
+          left: 350px - ($i * 4);
+        }
+      }
+      @media screen and (max-width: 520px) {
+        left: 200px;
+        top: 500px;
+      }
+      @for $i from 1 through 9 {
+        @media screen and (max-width: 519px - ($i*10)) {
+          left: 200px - ($i * 5);
+        }
+      }
+      @media screen and (max-width: 390px) {
+        left: 120px;
+        top: 480px;
+      }
+      @for $i from 1 through 100 {
+        @media screen and (max-width: 389px - ($i*20)) {
+          left: 120px - ($i * 11);
+        }
+      }
     }
     .slide-wrapper:hover {
       animation: bounce 1.5s infinite;
@@ -152,6 +208,58 @@ body {
       width: auto;
       top: 250px;
       left: 1040px;
+      @for $i from 1 through 13 {
+        @media screen and (max-width: 1260px - ($i*20)) {
+          left: 1040px - ($i * 11);
+        }
+      }
+      @media screen and (max-width: 992px) {
+        left: 835px;
+        top: 240px;
+      }
+      @for $i from 1 through 13 {
+        @media screen and (max-width: 991px - ($i*10)) {
+          left: 835px - ($i * 5);
+        }
+      }
+      @media screen and (max-width: 862px) {
+        left: 720px;
+        top: 220px;
+      }
+      @for $i from 1 through 13 {
+        @media screen and (max-width: 861px - ($i*10)) {
+          left: 720px - ($i * 6);
+        }
+      }
+      @media screen and (max-width: 764px) {
+        left: 490px;
+        top: 360px;
+      }
+      @for $i from 1 through 23 {
+        @media screen and (max-width: 763px - ($i*10)) {
+          left: 490px - ($i * 5);
+        }
+      }
+      @media screen and (max-width: 520px) {
+        left: 350px;
+        top: 340px;
+        height: 50px;
+        width: auto;
+      }
+      @for $i from 1 through 9 {
+        @media screen and (max-width: 520px - ($i*10)) {
+          left: 350px - ($i * 5);
+        }
+      }
+      @media screen and (max-width: 390px) {
+        left: 280px;
+        top: 310px;
+      }
+      @for $i from 1 through 100 {
+        @media screen and (max-width: 389px - ($i*20)) {
+          left: 280px - ($i * 11);
+        }
+      }
     }
     // .bee-gif:hover {
     //   animation: fly 2s ease-in-out;
@@ -183,34 +291,44 @@ body {
         }
       }
       @media screen and (max-width: 862px) {
-        left: 490px;
-        top: -420px;
+        height: 145px;
+        left: 279px;
+        top: -230px;
       }
-      @for $i from 1 through 40 {
+      @for $i from 1 through 5 {
         @media screen and (max-width: 861px - ($i*20)) {
-          left: 490px - ($i * 10);
+          left: 279px - ($i * 10);
+        }
+      }
+      @media screen and (max-width: 764px) {
+        left: 440px;
+        top: -370px;
+      }
+      @for $i from 1 through 23 {
+        @media screen and (max-width: 763px - ($i*10)) {
+          left: 440px - ($i * 5);
         }
       }
       @media screen and (max-width: 520px) {
         left: 310px;
-        top: -345px;
-        height: 150px;
+        top: -335px;
+        height: 130px;
         width: auto;
       }
       @for $i from 1 through 9 {
         @media screen and (max-width: 520px - ($i*10)) {
-          left: 310px - ($i * 8);
+          left: 310px - ($i * 5);
         }
       }
       @media screen and (max-width: 390px) {
-        left: 230px;
+        left: 250px;
         top: -290px;
-        height: 130px;
+        height: 110px;
         width: auto;
       }
       @for $i from 1 through 100 {
         @media screen and (max-width: 390px - ($i*20)) {
-          left: 230px - ($i * 11);
+          left: 250px - ($i * 11);
         }
       }
     }
