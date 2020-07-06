@@ -1,6 +1,6 @@
 @import "_config.scss";
 $break-point-1: 1300px;
-$break-point-2: 862px;
+$break-point-2: 850px;
 $break-point-3: 910px;
 
 html {
@@ -139,12 +139,12 @@ body {
         }
       }
       @media screen and (max-width: 992px) {
-        left: 720px;
+        left: 690px;
         top: 460px;
       }
       @for $i from 1 through 13 {
         @media screen and (max-width: 991px - ($i*10)) {
-          left: 720px - ($i * 10);
+          left: 690px - ($i * 10);
         }
       }
       @media screen and (max-width: 862px) {
@@ -462,11 +462,13 @@ body {
         margin: 4%;
       }
     }
+    a:hover {
+      text-decoration: none;
+    }
 
     .about-image {
       flex: 0 0 27%;
-      margin-left: 5%;
-
+      align-content: center;
       .profile-picture {
         margin-top: 30px;
         max-width: 100%;
@@ -476,37 +478,17 @@ body {
       }
 
       .profile-picture:hover {
-        -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 255, 0, 0.67);
-        -moz-box-shadow: 0px 0px 15px 0px rgba(0, 255, 0, 0.67);
-        box-shadow: 0px 0px 15px 0px rgba(0, 255, 0, 0.67);
+        -webkit-box-shadow: 0px 0px 30px 0px #fff;
+        -moz-box-shadow: 0px 0px 30px 0px #fff;
+        box-shadow: 0px 0px 30px 0px #fff;
       }
     }
+
     .hovereffect {
-      width: 100%;
-      height: 100%;
-      float: left;
-      overflow: hidden;
-      position: relative;
       text-align: center;
       cursor: default;
-    }
-    .hovereffect {
       .overlay {
-        width: 100%;
         overflow: hidden;
-        height: 4.75em;
-        -webkit-transition: -webkit-transform 0.35s;
-        transition: transform 0.35s;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-        visibility: hidden;
-      }
-
-      img {
-        display: block;
-        position: relative;
-        -webkit-transition: -webkit-transform 0.35s;
-        transition: transform 0.35s;
       }
     }
 
@@ -547,18 +529,22 @@ body {
       transform: translate3d(0, 0, 0);
     }
 
-    .hovereffect:hover p.icon-links a:nth-child(3) {
+    .hovereffect:hover p.icon-links a:nth-child(4) {
       -webkit-transition-delay: 0.1s;
+      transition-delay: 0.1s;
+    }
+    .hovereffect:hover p.icon-links a:nth-child(3) {
+      -webkit-transition-delay: 0.15s;
       transition-delay: 0.1s;
     }
 
     .hovereffect:hover p.icon-links a:nth-child(2) {
-      -webkit-transition-delay: 0.15s;
+      -webkit-transition-delay: 0.2s;
       transition-delay: 0.15s;
     }
 
     .hovereffect:hover p.icon-links a:first-child {
-      -webkit-transition-delay: 0.2s;
+      -webkit-transition-delay: 0.25s;
       transition-delay: 0.2s;
     }
 
@@ -756,6 +742,7 @@ body {
     h2 {
       text-align: center;
       padding: 100px;
+      padding-top: 0px;
       font-weight: bolder;
     }
   }
