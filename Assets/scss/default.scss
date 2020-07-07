@@ -467,7 +467,6 @@ body {
       font-weight: bold;
     }
     a:hover {
-      text-decoration: none;
       color: brown;
     }
 
@@ -611,18 +610,11 @@ body {
         }
 
         .pro-content {
-          opacity: 0.5;
+          opacity: 0.4;
+
           transition: 0.5s;
           img {
             max-width: 200px;
-          }
-
-          h3 {
-            margin: 10px 0 0;
-            padding: 0;
-            color: black;
-            text-align: center;
-            font-size: 1.5em;
           }
         }
       }
@@ -903,30 +895,6 @@ body {
     transform: translateY(-20px);
   }
 }
-
-// @keyframes fly {
-//   0% {
-//     -webkit-transform: translate(0) scaleX(1);
-//   }
-//   0.01% {
-//     -webkit-transform: translate(0) scaleX(1);
-//   }
-//   49.99% {
-//     -webkit-transform: translate(300px) scaleX(1);
-//   }
-//   50% {
-//     -webkit-transform: translate(300px) scaleX(-1);
-//   }
-//   50.01% {
-//     -webkit-transform: translate(300px) scaleX(-1);
-//   }
-//   99.99% {
-//     -webkit-transform: translate(0) scaleX(-1);
-//   }
-//   100% {
-//     -webkit-transform: translate(0) scaleX(1);
-//   }
-// }
 
 @keyframes main-text-an {
   0% {
