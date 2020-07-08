@@ -482,9 +482,9 @@ body {
       }
 
       .profile-picture:hover {
-        -webkit-box-shadow: 0px 0px 30px 0px #fff;
-        -moz-box-shadow: 0px 0px 30px 0px #fff;
-        box-shadow: 0px 0px 30px 0px #fff;
+        -webkit-box-shadow: 0px 0px 40px 0px #fff;
+        -moz-box-shadow: 0px 0px 40px 0px #fff;
+        box-shadow: 0px 0px 40px 0px #fff;
       }
     }
 
@@ -563,7 +563,7 @@ body {
   .projects-header,
   .experiences-header {
     text-align: center;
-    padding-top: 80px;
+    padding-top: 90px;
     line-height: normal;
   }
 
@@ -593,17 +593,16 @@ body {
       }
 
       .face {
-        width: 300px;
-        height: 200px;
-        border-radius: 40px;
+        width: 320px;
+        height: 280px;
       }
       .face1 {
         display: flex;
-        background: #fff;
+        background: lightgoldenrodyellow;
         justify-content: center;
         align-items: center;
         z-index: 1;
-
+        border-radius: 10px;
         .btn-link {
           cursor: default;
           text-decoration: none;
@@ -614,22 +613,35 @@ body {
 
           transition: 0.5s;
           img {
-            max-width: 200px;
+            max-width: 260px;
           }
         }
       }
+      .face1:hover {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        -webkit-box-shadow: 0px 0px 40px 0px #fff;
+        -moz-box-shadow: 0px 0px 40px 0px #fff;
+        box-shadow: 0px 0px 40px 0px #fff;
+      }
       .face2 {
         justify-content: center;
+        background-color: #f15b41;
         align-items: center;
         padding: 10px;
         box-sizing: border-box;
-        box-shadow: -6px -6px 20px rgba(255, 255, 255, 0.1),
-          6px 6px 20px rgba(0, 0, 0, 0.1);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        -webkit-box-shadow: 0px 0px 40px 0px #fff;
+        -moz-box-shadow: 0px 0px 40px 0px #fff;
+        box-shadow: 0px 0px 40px 0px #fff;
 
         .pro2-content {
           p {
             margin: 0;
             padding: 0;
+            color: white;
+            font-size: 14px;
           }
 
           .readMore {
@@ -653,7 +665,7 @@ body {
 
     .card:hover {
       .face1 {
-        background: lightgoldenrodyellow;
+        background: white;
         .pro-content {
           opacity: 1;
         }
@@ -774,7 +786,7 @@ body {
       .social-icons .fa {
         font-size: 1.8em;
       }
-      /*Change icons circle size and color here*/
+
       .social-icons .fa {
         width: 50px;
         height: 50px;
