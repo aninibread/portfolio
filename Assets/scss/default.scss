@@ -341,7 +341,7 @@ body {
       min-height: 8vh;
       transition: background 0.6s;
       width: 100%;
-      z-index: 2;
+      z-index: 3;
 
       .logo {
         height: 40px;
@@ -366,7 +366,7 @@ body {
           }
           a:hover {
             text-decoration: none;
-            color: #f15b41;
+            color: #fa8f28;
           }
         }
       }
@@ -374,7 +374,7 @@ body {
   }
 
   nav.black {
-    background: #43542a;
+    background: #cf4f39;
   }
 
   .burger {
@@ -390,11 +390,11 @@ body {
   }
 
   nav.shrink {
-    background-color: #43542a;
+    background-color: #cf4f39;
     .nav-links {
       position: absolute;
       right: 0px;
-      background: #43542a;
+      background: #cf4f39;
       display: flex;
       flex-direction: column;
       height: 95vh;
@@ -655,7 +655,7 @@ body {
             text-transform: uppercase;
             font-weight: 600;
             padding: 6px;
-            background-color: lightgrey;
+            background-color: orange;
             letter-spacing: 1px;
           }
         }
@@ -694,8 +694,8 @@ body {
     }
 
     .box {
-      box-shadow: -6px -6px 20px rgba(255, 255, 255, 0.1),
-        6px 6px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: -6px -6px 20px rgba(231, 200, 169, 0.301),
+        6px 6px 20px rgba(221, 122, 30, 0.493);
       display: flex;
       border-radius: 40px;
       justify-content: center;
@@ -743,19 +743,71 @@ body {
         font-weight: 600;
         padding: 6px;
         letter-spacing: 1px;
-        background-color: lightgrey;
+        background-color: #f15b41;
       }
     }
 
     .box:hover {
       box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.5),
-        inset 6px 6px 20px rgba(0, 0, 0, 0.05);
+        inset 6px 6px 20px rgba(196, 114, 8, 0.281);
     }
 
     .work {
       width: 450px;
       height: 500px;
     }
+  }
+
+  .popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+  }
+
+  .popup .content {
+    position: absolute;
+    top: 390vh;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 500px;
+    height: 250px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 20px;
+  }
+
+  .popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  .popup.active .overlay {
+    display: block;
+  }
+
+  .popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
   }
 
   .other-experiences-container {
@@ -772,8 +824,8 @@ body {
     }
 
     .box {
-      box-shadow: -6px -6px 20px rgba(255, 255, 255, 0.1),
-        6px 6px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: -6px -6px 20px rgba(231, 200, 169, 0.301),
+        6px 6px 20px rgba(221, 122, 30, 0.493);
       display: flex;
       border-radius: 40px;
       justify-content: center;
@@ -826,13 +878,13 @@ body {
         font-weight: 600;
         padding: 6px;
         letter-spacing: 1px;
-        background-color: lightgrey;
+        background-color: #f15b41;
       }
     }
 
     .box:hover {
       box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.5),
-        inset 6px 6px 20px rgba(0, 0, 0, 0.05);
+        inset 6px 6px 20px rgba(196, 114, 8, 0.281);
     }
 
     .work {
@@ -847,12 +899,13 @@ body {
       padding: 100px;
       padding-top: 0px;
       font-weight: bolder;
+      color: #44210f;
     }
   }
 
   footer {
     width: 100%;
-    background-color: #44210f;
+    background-color: #cf4f39;
     color: white;
     text-align: center;
     position: absolute;
@@ -902,9 +955,9 @@ body {
       .social-icons .fa:hover,
       .social-icons .fa:active {
         color: #fff;
-        -webkit-box-shadow: 1px 1px 3px #333;
-        -moz-box-shadow: 1px 1px 3px #333;
-        box-shadow: 1px 1px 3px #333;
+        -webkit-box-shadow: 1px 1px 3px #fff;
+        -moz-box-shadow: 1px 1px 3px #fff;
+        box-shadow: 1px 1px 3px #fff;
       }
       .social-icons.icon-zoom .fa:hover,
       .social-icons.icon-zoom .fa:active {

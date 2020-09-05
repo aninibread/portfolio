@@ -61,7 +61,9 @@
 
     <header class="homeMenu">
       <nav>
-        <img class="logo" src="./Version16.png" alt="Logo" />
+        <div class="navbrand">
+          <img class="logo" src="./Version16.png" alt="Logo" />
+        </div>
         <ul class="nav-links">
           <li>
             <a href="#About">About Me</a>
@@ -269,6 +271,38 @@
       </div>
     </div>
 
+    <div class="popup" id="popup-1">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" id="pop1" onclick="togglePopup(this.id)">
+          &times;
+        </div>
+        <h1>Title1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+          aspernatur laborum rem sed laudantium excepturi veritatis voluptatum
+          architecto, dolore quaerat totam officiis nisi animi accusantium alias
+          inventore nulla atque debitis.
+        </p>
+      </div>
+    </div>
+
+    <div class="popup" id="popup-2">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" id="pop2" onclick="togglePopup(this.id)">
+          &times;
+        </div>
+        <h1>Title2</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+          aspernatur laborum rem sed laudantium excepturi veritatis voluptatum
+          architecto, dolore quaerat totam officiis nisi animi accusantium alias
+          inventore nulla atque debitis.
+        </p>
+      </div>
+    </div>
+
     <div class="experiences-area" id="Experiences">
       <h1 class="experiences-header">My Experiences 🌻</h1>
       <h2 class="work-header">Work Experiences ⚙️</h2>
@@ -279,7 +313,9 @@
 
             <img src="Images/York.jpg" alt="YorkU internship" />
             <p>My introduction to Biomedical Engineering</p>
-            <a class="readMore" href="#">Read More</a>
+            <a id="pop1" class="readMore button" onClick="togglePopup(this.id)"
+              >Read More</a
+            >
           </div>
         </div>
         <div class="box work">
@@ -288,7 +324,9 @@
 
             <img src="Images/Teranet.jpg" alt="Software Developer internship" />
             <p>An internship in a COVID Era</p>
-            <a class="readMore" href="#">Read More</a>
+            <a id="pop2" class="readMore" onClick="togglePopup(this.id)"
+              >Read More</a
+            >
           </div>
         </div>
       </div>
@@ -390,7 +428,7 @@
             <p>📍 Victoria Park C.I.</p>
             <p class="description">
               Led the girls and co-ed curling team from 2016-2018. 🥇 Won 1 gold
-              and 2 bronze metals in city wide competition.
+              and 2 bronze metals in city-wide competition.
             </p>
             <img src="Images/Curling2018.jpg" alt="curling" />
             <a
