@@ -47,11 +47,6 @@ function onHover() {
     );
 }
 
-// function togglePopup() {
-
-//   document.getElementById("popup-1").classList.toggle("active");
-// }
-
 function togglePopup(id) {
   switch (id) {
     case "pop1":
@@ -59,6 +54,9 @@ function togglePopup(id) {
       break;
     case "pop2":
       document.getElementById("popup-2").classList.toggle("active");
+      break;
+    case "pop3":
+      document.getElementById("popup-3").classList.toggle("active");
       break;
   }
 }
