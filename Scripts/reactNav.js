@@ -61,6 +61,7 @@ function togglePopup(id) {
     case "pop4":
       document.getElementById("popup-4").classList.toggle("active");
       break;
+      
   }
 }
 
