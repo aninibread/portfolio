@@ -22,7 +22,7 @@ body {
   .homeMenu {
     background-size: cover;
     background-position: center;
-    background-color: #fcdb04;
+    background-color: #ffe43b;
     height: 100vh;
     overflow: hidden;
 
@@ -359,7 +359,7 @@ body {
 
           a {
             text-decoration: none;
-            font-size: 20px;
+            font-size: 21px;
             font-weight: 500;
             line-height: normal;
             color: $white;
@@ -416,7 +416,7 @@ body {
     }
     .burger {
       display: block;
-      padding-left: 90px;
+      padding-right: 50px;
       cursor: pointer;
     }
     .nav-active {
@@ -601,7 +601,7 @@ body {
       align-items: center;
       border: none;
       margin: 20px;
-      background-color: #fcdb04;
+      background-color: #ffe43b;
 
       panel-title {
         text-decoration: none;
